@@ -87,6 +87,7 @@ public class Song {
       * setlike method
       * mutator that allows the Playlist class to alter the like status of 
       * a given song
+      * @param boolean likestatus
     */
     public void setLike(boolean likestatus)
     {
