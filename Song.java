@@ -9,23 +9,21 @@ public class Song {
     //author
     //length
     //like status
-    private String Name;
-    private String Artist;
-    private int lengthMinutes;
-    private int lengthSeconds;
+    private String title;
+    private String artist;
+    private int length;
     private boolean like;
-
+    
     /**
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
-    public Song(String name, String artist, int minutes, int seconds, boolean likestatus)
+    public Song(String title, String artist, int length, boolean like)
     {
-        Name = name;
-        Artist = artist;
-        lengthMinutes = minutes;
-        lengthSeconds = seconds;
-        like = likestatus;
+        this.title = title;
+        this.artist = artist;
+        this.length = length;
+        like = false;
     }
     
     /**
@@ -37,26 +35,31 @@ public class Song {
     */
     public String toString()
     {
-        return getName() + "by" + getArtist() + getLength();
+        return getTitle() + "by" + getArtist() + getLength();
     }
     
-    public String getName()
+    public String getTitle()
     {
-        return "\"" + Name + "\"";
+        return "\"" + title + "\"";
     } 
     
     public String getArtist()
     {
-        return Artist;
+        return artist;
     }
     
-    public String getLength()
+    public int getLength()
     {
-        return "(" + lengthMinutes + ":" + lengthSeconds + ")";
+        return length;
     }
 
     public boolean like()
     {
         return like;
+    }
+    
+    public void setLike()
+    {
+        
     }
 }

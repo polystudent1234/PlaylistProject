@@ -34,9 +34,14 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-    public void addSong(String Name, String Artist, int lengthMinutes, int lengthSeconds, boolean likestatus)
+    public void addSong(String title, String artist, int length)
     {
-        playlist.add(new Song(Name, Artist, length, like));
+        
+    }
+    
+    public void addSong(Song newSong)
+    {
+        playlist.add(newSong);
     }
     
     public void like(boolean like)
@@ -48,6 +53,16 @@ public class Playlist {
     {
         playlist.remove();
     }
+    
+    public void examine()
+    {
+        
+    }
+    
+    
+    
+    
+    
     
     
 }

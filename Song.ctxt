@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Song
 comment0.text=\n\ File\ for\ a\ Song\ class\ to\ be\ used\ in\ the\ Playlist\ Project\n\ @author\ Max\ Herman\n\ @version\ 2024-1-24\n
-comment1.params=name\ artist\ minutes\ seconds
-comment1.target=Song(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.params=name\ artist\ minutes\ seconds\ likestatus
+comment1.target=Song(java.lang.String,\ java.lang.String,\ int,\ int,\ boolean)
 comment1.text=\n\ Constructor--\ what\ information\ needs\ to\ be\ given\ to\ make\ a\ Song?\n\ How\ will\ you\ handle\ 'liked'\ songs?\ It\ makes\ sense\ for\ a\ Song\ not\ be\ 'liked'\ by\ default\n
 comment2.params=
 comment2.target=java.lang.String\ toString()
@@ -14,5 +14,5 @@ comment4.target=java.lang.String\ getArtist()
 comment5.params=
 comment5.target=java.lang.String\ getLength()
 comment6.params=
-comment6.target=void\ like()
+comment6.target=boolean\ like()
 numComments=7
