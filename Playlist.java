@@ -70,7 +70,14 @@ public class Playlist {
     */
     public void like(boolean likestatus)
     {
-        likestatus = false;
+        if (likestatus == true)
+        {
+            likestatus = false;
+        }
+        else
+        {
+            likestatus = true;
+        }
     }
     
     /**
@@ -78,7 +85,13 @@ public class Playlist {
     */
     public void removeSong(String Name)
     {
-        playlist.remove(Name);
+        for (int i = playlist.size() - 1; i >= 0; i--)
+        {
+            if (playlist.get(i).getTitle() == Name)
+            {
+                playlist.remove(i);
+            }
+        }
     }
     
     /**
@@ -86,7 +99,7 @@ public class Playlist {
     */
     public void examineAll()
     {
-        for (int i = playlist.size() - 1; i >= 0; i --)
+        for (int i = playlist.size() - 1; i >= 0; i--)
         {
             System.out.println(playlist.get(i).toString());
         }
@@ -97,7 +110,7 @@ public class Playlist {
     */
     public void examineLiked()
     {
-        for (int i = 1; i < playlist.size(); i++)
+        for (int i = 0; i < playlist.size(); i++)
         {
             if (playlist.get(i).like())
             {
@@ -112,9 +125,9 @@ public class Playlist {
     */
     public void removeUnliked()
     {
-        for (int i = 1; i < playlist.size(); i++)
+        for (int i = playlist.size() - 1; i >= 0; i--)
         {
-            if (playlist.get(i).like())
+            if (playlist.get(i).like() == false)
             {
                 playlist.remove(i);
             }

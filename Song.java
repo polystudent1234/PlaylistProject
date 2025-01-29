@@ -44,7 +44,7 @@ public class Song {
     */
     public String toString()
     {
-        return getTitle() + " by " + getArtist() + " " + getLength();
+        return getTitle() + " by " + getArtist() + " (" + (getLength()/60) + ":" + getLength() + (getLength()/60) + ")";
     }
     
     /**
