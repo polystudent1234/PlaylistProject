@@ -34,29 +34,91 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
+      
+    /**
+      * addSong method
+      * adds a new song and relevant information
+      * @param String title, String artist, int length
+    */
     public void addSong(String title, String artist, int length)
     {
-        
+        playlist.add(new Song(title, artist, length));
     }
     
+    /**
+      * addSong something
+    */
     public void addSong(Song newSong)
     {
         playlist.add(newSong);
     }
     
-    public void like(boolean like)
+    /**
+      * removeSong method
+      * removes a given song from the playlist
+      * @param Song Song
+    */
+    public void removeSong(Song Song)
     {
-        
+        playlist.remove(Song);
     }
     
+    /**
+      * like method
+      * alters the like status of a song
+      * @param boolean likestatus
+    */
+    public void like(boolean likestatus)
+    {
+        likestatus = false;
+    }
+    
+    /**
+      * anothe rremove song method????
+    */
     public void removeSong(String Name)
     {
-        playlist.remove();
+        playlist.remove(Name);
     }
     
-    public void examine()
+    /**
+      * examineAll method
+    */
+    public void examineAll()
     {
-        
+        for (int i = playlist.size() - 1; i >= 0; i --)
+        {
+            System.out.println(playlist.get(i).toString());
+        }
+    }
+    
+    /**
+      * examineLiked method
+    */
+    public void examineLiked()
+    {
+        for (int i = 1; i < playlist.size(); i++)
+        {
+            if (playlist.get(i).like())
+            {
+                System.out.println(playlist.get(i).toString());
+            }
+        }
+    }
+    
+    /**
+      * removeUnliked method
+      * removes all unliked songs on the playlist
+    */
+    public void removeUnliked()
+    {
+        for (int i = 1; i < playlist.size(); i++)
+        {
+            if (playlist.get(i).like())
+            {
+                playlist.remove(i);
+            }
+        }
     }
     
     
