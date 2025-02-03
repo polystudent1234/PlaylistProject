@@ -54,6 +54,12 @@ public class Playlist {
         playlist.add(newSong);
     }
     // overloaded to add both ways
+
+    public Song callSong(int num)
+    {
+        return playlist.get(num);
+    }
+    // to reference the selected song as a Song in the tester ^
     
     /**
       * removeSong method
@@ -70,16 +76,9 @@ public class Playlist {
       * alters the like status of a song
       * @param boolean likestatus
     */
-    public void like(boolean likestatus)
+    public void like(Song song, boolean likestatus)
     {
-        if (likestatus == true)
-        {
-            likestatus = false;
-        }
-        else
-        {
-            likestatus = true;
-        }
+        song.setLike(likestatus);
     }
     // just have to reverse if it is liked or not ("alter the like status")
     
