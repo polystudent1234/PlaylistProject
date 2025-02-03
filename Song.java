@@ -46,6 +46,7 @@ public class Song {
     {
         return getTitle() + " by " + getArtist() + " (" + (getLength()/60) + ":" + getLength() + (getLength()/60) + ")";
     }
+    // need to do math to get the right time, as getLength() is in seconds
     
     /**
       * getTitle Method
@@ -55,6 +56,7 @@ public class Song {
     {
         return "\"" + title + "\"";
     } 
+    // special formatting to put quotes
     
     /**
       * get Artist method
@@ -93,4 +95,5 @@ public class Song {
     {
         like = likestatus;
     }
+    // just changes to specified stAtus, even if the same
 }
