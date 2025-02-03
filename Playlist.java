@@ -10,13 +10,14 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
     private ArrayList<Song> playlist;
-
+    // instance varable to reference later
 
 
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
       */
+      // I assume the additional methods happen later
     public Playlist()
     {
         playlist = new ArrayList<Song>();
@@ -52,6 +53,7 @@ public class Playlist {
     {
         playlist.add(newSong);
     }
+    // overloaded to add both ways
     
     /**
       * removeSong method
@@ -79,9 +81,10 @@ public class Playlist {
             likestatus = true;
         }
     }
+    // just have to reverse if it is liked or not ("alter the like status")
     
     /**
-      * anothe rremove song method????
+      * another remove song method????
     */
     public void removeSong(String Name)
     {
@@ -93,6 +96,7 @@ public class Playlist {
             }
         }
     }
+    // remove by name
     
     /**
       * examineAll method
@@ -104,6 +108,7 @@ public class Playlist {
             System.out.println(playlist.get(i).toString());
         }
     }
+    // print them all
     
     /**
       * examineLiked method
