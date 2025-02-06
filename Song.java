@@ -41,6 +41,7 @@ public class Song {
       * toString Method
       * @return most of the information of any given song formatted like:
       * "title" by Artist (minutes:seconds)
+      * @author Connor Poon
     */
     public String toString()
     {
@@ -57,6 +58,7 @@ public class Song {
     /**
       * getTitle Method
       * @return the title in quotation marks: "title"
+      * @author Connor Poon
     */
     public String getTitle()
     {
@@ -66,6 +68,7 @@ public class Song {
     /**
       * get Artist method
       * @return the name of the artist as a string
+      * @author Connor Poon
     */
     public String getArtist()
     {
@@ -75,6 +78,7 @@ public class Song {
     /**
       * getLength method
       * @return the length of the song in seconds as an integer
+      * @author Max herman
     */
     public int getLength()
     {
@@ -84,6 +88,7 @@ public class Song {
     /**
       * like method
       * @return the like status of the song (true/false) as a boolean
+      * @author Max Herman
     */
     public boolean like()
     {
@@ -95,6 +100,7 @@ public class Song {
       * mutator that allows the Playlist class to alter the like status of 
       * a given song
       * @param boolean likestatus
+      * @author Max Herman
     */
     public void setLike(boolean likestatus)
     {

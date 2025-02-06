@@ -3,6 +3,8 @@ import java.util.ArrayList;
 /**
  * The Playlist class, which will keep track of a playlist of Song objects
  * Refer to the project description to make sure you have access to all available methods
+ * @author Max Herman & Connor Poon
+ * @version 2024-2-1
  */
 public class Playlist {
     /**
@@ -39,6 +41,7 @@ public class Playlist {
       * addSong method
       * adds a new song and relevant information
       * @param String title, String artist, int length
+      * @author Max Herman
     */
     public void addSong(String title, String artist, int length)
     {
@@ -46,7 +49,10 @@ public class Playlist {
     }
     
     /**
-      * addSong something
+      * addSong method
+      * adds a new song
+      * @param Song newSong
+      * @author Max Herman
     */
     public void addSong(Song newSong)
     {
@@ -57,6 +63,7 @@ public class Playlist {
       * removeSong method
       * removes a given song from the playlist
       * @param Song Song
+      * @author Connor Poon
     */
     public void removeSong(int position)
     {
@@ -67,6 +74,7 @@ public class Playlist {
       * like method
       * alters the like status of a song
       * @param boolean likestatus
+      * @author Connor Poon
     */
     public void like(int position)
     {
@@ -75,6 +83,7 @@ public class Playlist {
     
     /**
       * anothe rremove song method????
+      * @author Max herman
     */
     public void removeSong(String Name)
     {
@@ -83,6 +92,7 @@ public class Playlist {
     
     /**
       * examineAll method
+      * @author Connor Poon
     */
     public void examineAll()
     {
@@ -94,6 +104,7 @@ public class Playlist {
     
     /**
       * examineLiked method
+      * @author Max Herman
     */
     public void examineLiked()
     {
@@ -109,6 +120,7 @@ public class Playlist {
     /**
       * removeUnliked method
       * removes all unliked songs on the playlist
+      * @author Max herman
     */
     public void removeUnliked()
     {
@@ -121,6 +133,11 @@ public class Playlist {
         }
     }
     
+    /**
+      * gettotalLength method
+      * sums and prints the total length of the playlist
+      * @author Max herman
+    */
     public void gettotalLength()
     {
         int minutes = 0;
